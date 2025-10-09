@@ -1,9 +1,9 @@
 - `%d` 
-    - type format indicators, It represents the value willbe an integer.
+    - type format indicators, It represents the value will be an integer.
     - These type format indicators in print() function will act as placeholder, To reference the actual data in that position that will be printed at run time. 
 - `string interpolation`
     - ```
-      myName = 'Mounika'
+      myName = 'John'
       print("My name is:",myName)
       print("My name is: %s"%(myName))
       print(f"My name is: {myName}")
