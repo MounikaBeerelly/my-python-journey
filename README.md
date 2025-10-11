@@ -1,6 +1,11 @@
 - `%d` 
     - type format indicators, It represents the value will be an integer.
     - These type format indicators in print() function will act as placeholder, To reference the actual data in that position that will be printed at run time. 
+
+- `print(f"\nCreating a single dimension array...", end="\n")`
+    - The f before the string — means it’s an f-string (formatted string literal) in Python.
+    - It allows you to easily insert variables or expressions
+    
 - `string interpolation`
     - ```
       myName = 'John'
