@@ -14,7 +14,3 @@ print(f"\nThe total elements in the array will be: {inRowCount,inColumnsCount}",
 randomNumberArray = np.random.random(size = (inRowCount,inColumnsCount))
 print(f"\nThe generated Two dimensional Random Float Array of order '{inRowCount} * {inColumnsCount}' Elements is\n",end="\n")
 print(f"\n{randomNumberArray}")
-
-randomNumberArray01 = np.random.random(size = (inRowCount * inColumnsCount)).reshape(inRowCount,inColumnsCount)
-print(f"\nThe generated Two dimensional Random Float Array of order '{inRowCount} * {inColumnsCount}' Elements is\n",end="\n")
-print(f"\n{randomNumberArray}")
