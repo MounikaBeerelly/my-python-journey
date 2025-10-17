@@ -26,3 +26,20 @@
 
 2. Homogeneous
     - All elements in a NumPy array must have the same data type, making it more memory-efficient than Python lists.
+
+### `np.array()` function:
+
+1. `np.array()` function is the primary method for creating NumPy arrays
+2. `np.array()` converts python sequences like lists, tuples, or other array-like structures into NumPy arrays, which provide enhanced functionality of numerical computation
+
+### Basic Syntax:
+
+    `numpy.array(object,dtype=none,copy=true,order='K',subok=False,ndmin=0)`
+
+#### Parameters Info:
+1. **Object**: The input data(list,tuple,or other array-like object) to be converted into an array
+2. **dtype**: (Optional) Specifies the desired data type for the array. If not provided, it is inferred from the input data
+3. **copy**: (Optional) If true, creates a copy of the object. If False, a view of the object may be created
+4. **order**: (optional) Specifies the memory layout. 'C' for row-major (c-style), 'F for column-major (Fortan-style), and 'K' for preserving the input order
+5. **subok**: (Optional) If true, sub-classes of ndarray are passed through; otherwise, the base class is used
+6. **ndmin**: (optional) specifies the minimum number of dimensions the array should have. If the input data has fewer dimensions, new axes are prepended.

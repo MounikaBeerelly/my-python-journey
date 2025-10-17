@@ -20,5 +20,5 @@ print(finalArray)
 
 
 """
-When arrays are concatenated, Two different arrays of "Different row order, haviing same column order" can be concatenated
+When arrays are concatenated, Two different arrays of "Different row order, having same column order" can be concatenated
 """
