@@ -34,4 +34,41 @@
 - d0,d1,..., dn: The dimensions of the output array. These are provided as positional arguments
 
 **Note**:  If no arguments are passed, it generates a single random number
+
+## Understanding the `np.random.normal()` function:
+
+1. `np.random.normal()`function in NumPy is used to generate samples from a normal (Gaussian) distribution.
     
+### Basic Syntax:
+   `numpy.random.normal(loc = 0.0, scale = 1.0, size = None)`
+
+**Parameters Info**:  
+
+1. `loc (float, optional)`:
+    - The mean (center) of the normal distribution
+    - Default : 0.0
+2. `scale (float, optional)`:
+    - The standard deviation (spread) of the normal distribution
+    - Must be a positive number
+    - Default: 1.0
+3. `size (int or tuple of ints, optional)`:
+    - The shape of the output array
+    - If none, a single value is returned
+
+### Waht exactly `np.random.normal()` returns?
+    - A single value or an array of values sampled from the specified normal distribution
+        
+### Note:
+1. A normal distribution is symmetric and characterized by two parameters.
+    - Mean (loc) determines the center
+    - Standard deviation (scale) determines the spread
+2. The normal distribution has a bell-shaped curve most values are concentrated near the mean
+3. The 68-95-99.7 rule applies
+    - ~68% of the data falls within 1 standard deviation
+    - ~95% of the data falls within 2 standard deviation
+    - ~99.7% of the data falls within 3 standard deviation.
+
+### Where exactly `np.random.normal()` is used?
+    - Simulations to generate random noise
+    - Machine learning to initialize weights
+    - Statistical modeling and synthetic data generation
