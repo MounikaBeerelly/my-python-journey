@@ -12,6 +12,6 @@
     - Slicing is done using a colon (:) notation
     - Basic syntax of slicing
         - `NumPyArray(start:stop:step)`
-        - Start: The starting index (Inclusive)
-        - Stop: The ending index (Exclusive)
-        - Step: The increment between indices (default is 1)
+            - Start: The starting index (Inclusive)
+            - Stop: The ending index (Exclusive)
+            - Step: The increment between indices (default is 1)
