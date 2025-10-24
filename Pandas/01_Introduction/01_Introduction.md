@@ -1,6 +1,6 @@
 ## Pandas Library:
 
-- Pandas is an Open-source python library
+- Pandas is an `Open-source python library`.
 - Pandas is designed and developed for working easily and intuitively with
     - Relational Data
     - Labeled data
@@ -28,27 +28,11 @@
 - Provides fast and efficient data frame object having default and customised indexing.
     - Data frame: Can handle any structures of the data of any size, with any number of columns scaled to any number of records
 - Provides tools for loading data into In-Memory data objects from different file formats
-- Has features for data alignment and integrated handling of missing data as NaN
-- Has features for Reshaping and Pivoting of date sets
+- Has features for data alignment and integrated handling of missing data as NaN.
+- Has features for `Reshaping and Pivoting of date sets`.
 - Has features for Label-based Slicing, Indexing and Sub-Setting of large data sets.
 - Using Pandas columns from a data structure can be deleted OR inserted
 - Has powerful Group By data feature for aggregation anf transformations
 - Provides very high-performance merging and joing of data
 - Provides strong time series functionality
 - Pandas is fast and efficient for manipulating and Analyzing data
-
-### What are the data structures supported by Pandas?
-
-- Pandas provides three different data structures for manipulating the data
-    - Series
-    - DataFrame
-    - Panel
-- All data structures in Pandas are built on top of NumPy array, hence can handle numerical data with absolute speed and fastness
-- All Pandas data structures follow the concept of "Higher dimensional data structure is a container of its lower dimensional data structure
-    - Data frame is a container of Series
-    - Panel is a container of data frame
-- Pandas data structures are designed to handle
-    - Integer
-    - String
-    - Float
-    - Python Object
