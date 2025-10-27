@@ -14,7 +14,7 @@
     - Float
     - Python Object
 
-### What is Series Data Structures in Pandas?
+### What is Series Data Structure in Pandas?
 
 - Series is a `one-dimensional labelled array` like structure with `homogeneous data`.
 - Series can hold any data type
@@ -33,3 +33,14 @@
     empnoSeries = pd.Series(df['EMPNO'])
     enameSeries = pd.Series(df['ENAME'])
     ```
+
+### What is DataFrame Data Structure in Pandas?
+
+- DataFrame is a two dimensional array with heterogeneous data.
+- The size of the dataframe is mutable.
+- The Panadas dataframe petentially manages Heterogeneous tabular data with labelled axes represented as `Rows and Columns`.
+- The total data loaded into Pandas dataframe is aligned as a relational table, with `Rows and Columns`.
+- Pandas dataframe consists of three principal components
+    - Data
+    - Rows
+    - Columns
