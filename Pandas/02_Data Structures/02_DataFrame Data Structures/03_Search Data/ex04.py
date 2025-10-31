@@ -22,7 +22,7 @@ print(empColumnLabels)
 startRange = int(input("\nPlease provide the starting employee number: "))
 endRange = int(input("\nPlease provide the ending employee number: "))
 
-empRecord = empDataFrame.loc[startRange : endRange]
+empRecord = empColumnLabels.loc[startRange : endRange]
 
 print("\nThe Details of the employees from Employee number: " + str(startRange) + " To " + str(endRange) + " are..", end="\n")
 print(empRecord)
@@ -49,18 +49,18 @@ EMPNO
 7902     FORD    ANALYST  7566.0   3-Dec-81  3000     NaN      20
 7934   MILLER      CLERK  7782.0  23-Jan-82  1300     NaN      10
 
-Please provide the starting employee number: 7654
+Please provide the starting employee number: 7788
 
-Please provide the ending employee number: 7876
+Please provide the ending employee number: 7902
 
-The Details of the employees from Employee number: 7654 To 7876 are..
-        ENAME        JOB     MGR   HIREDATE   SAL    COMM  DEPTNO
+The Details of the employees from Employee number: 7788 To 7902 are..
+        ENAME        JOB     MGR   HIREDATE   SAL  COMM  DEPTNO
 EMPNO
-7654   MARTIN   SALESMAN  7698.0  28-Sep-81  1250  1400.0      30
-7698    BLAKE    MANAGER  7839.0   1-May-81  2850     NaN      30
-7782    CLARK    MANAGER  7839.0   9-Jun-81  2450     NaN      10
-7788    SCOTT    ANALYST  7566.0   9-Dec-82  3000     NaN      20
-7839     KING  PRESIDENT     NaN  17-Nov-81  5000     NaN      10
-7844   TURNER   SALESMAN  7698.0   8-Sep-81  1500     0.0      30
-7876    ADAMS      CLERK  7788.0  12-Jan-83  1100     NaN      20
+7788    SCOTT    ANALYST  7566.0   9-Dec-82  3000   NaN      20
+7839     KING  PRESIDENT     NaN  17-Nov-81  5000   NaN      10
+7844   TURNER   SALESMAN  7698.0   8-Sep-81  1500   0.0      30
+7876    ADAMS      CLERK  7788.0  12-Jan-83  1100   NaN      20
+7900    JAMES      CLERK  7698.0   3-Dec-81   950   NaN      30
+7902     FORD    ANALYST  7566.0   3-Dec-81  3000   NaN      20
+
 """
