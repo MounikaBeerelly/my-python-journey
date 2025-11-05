@@ -45,3 +45,4 @@
     - Rows
     - Columns
 
+- **`When sorting, it is not rearranging the index numbers`**
