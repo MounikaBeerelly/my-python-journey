@@ -65,3 +65,9 @@
     - fillna()
     - replace()
     - interpolate()
+
+### How do we check missing values in Pandas dataframe?
+1. When a missing value is part of the Pandas dataframe, we should use either `isnull()` OR `notnull()` functions to check the missing value status.
+2. `isnull()` OR `notnull()` both will check whether the value is NaN OR not.
+3. `isnull()` OR `notnull()` functions can also be used to find missing values in the Pandas Series.
+4. When `isnull()` function is used upon a Pandas dataframe, the function returns the dataframe with boolean value of `True` for NaN number.
