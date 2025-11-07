@@ -42,3 +42,7 @@ Handle auto conversion of large datasets : `pd.set_option('display.float_format'
         1. Left Outer Join
         2. Right Outer Join
         3. Full Outer Join
+
+### Note:
+- Standard timezones recognized by Python -
+    `https://pvlib-python.readthedocs.io/en/stable/timetimezones.html`
