@@ -14,7 +14,6 @@ empDataFrame = pd.read_csv("C:\Practice\my-python-journey\DataSets\EmpDataSet.cs
 print("\n", empDataFrame, end="\n")
 
 empDeptJoinInfo = pd.merge(empDataFrame, deptDataFrame, how = 'right', on = ['DEPTNO'])
-# empDeptJoinInfo = pd.merge(empDataFrame, deptDataFrame, how = 'outer', on = ['DEPTNO'])
 
 print("\n", empDeptJoinInfo, end="\n")
 
