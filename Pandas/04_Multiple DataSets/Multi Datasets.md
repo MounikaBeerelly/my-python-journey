@@ -26,3 +26,19 @@ Handle auto conversion of large datasets : `pd.set_option('display.float_format'
     4. By ignoring the indexes of the dataframes
     5. By using the group keys
     6. With the help of mixed `ndims`
+
+
+### What is merging of dataframes in Pandas?
+
+1. Merging in Pandas is similar to the criteria like joining of the data using the keys.
+2. Pandas provides rich options for high performance in-memory data merging and joining
+3. When merging OR joining is executed in Pandas we can use only two dataframes at a time, these dataframes are recognized as left and right dataframes in practice.
+4. When implementing the merging OR joining we have to identify the key column on which the merge OR join has to be executed, and it is better these key columns are `unique` throughout the column to avoid duplication OR Joining of the records.
+5. To execute the Merge OR Join operation in Pandas we have the `merge()` function OR method.
+6. `merge()` function OR method can provide all the logical requirements for the simulation of database joins.
+7. Pandas provides all the basic Join operations that are supported by the databases
+    1. Inner Join
+    2. Outer Join
+        1. Left Outer Join
+        2. Right Outer Join
+        3. Full Outer Join
