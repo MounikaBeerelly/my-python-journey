@@ -4,16 +4,15 @@ os.system("cls")
 import pandas as pd
 import numpy as np
 
-
-deptDataFrame = pd.read_csv("C:\Practice\my-python-journey\DataSets\DeptDataSet.csv")
+deptData = pd.read_csv("C:\Practice\my-python-journey\DataSets\DeptDataSet.csv")
     
-print("\n", deptDataFrame, end="\n")
+print("\n", deptData, end="\n")
 
-empDataFrame = pd.read_csv("C:\Practice\my-python-journey\DataSets\EmpDataSet.csv")
+empData = pd.read_csv("C:\Practice\my-python-journey\DataSets\EmpDataSet.csv")
     
-print("\n", empDataFrame, end="\n")
+print("\n", empData, end="\n")
 
-empDeptJoinInfo = pd.merge(empDataFrame, deptDataFrame, how = 'inner', on = ['DEPTNO'])
+empDeptJoinInfo = deptData.set_index("DEPTNO").join(empData.set_index("DEPTNO"), how="inner")
 
 print("\n", empDeptJoinInfo, end="\n")
 
@@ -43,20 +42,21 @@ Output:
 12   7902    FORD    ANALYST  7566.0   3-Dec-81  3000     NaN      20
 13   7934  MILLER      CLERK  7782.0  23-Jan-82  1300     NaN      10
 
-     EMPNO   ENAME        JOB     MGR   HIREDATE   SAL    COMM  DEPTNO       DNAME       LOC
-0    7369   SMITH      CLERK  7902.0  17-Dec-80   800     NaN      20    RESEARCH    DALLAS
-1    7499   ALLEN   SALESMAN  7698.0  20-Feb-81  1600   300.0      30       SALES   CHICAGO
-2    7521    WARD   SALESMAN  7698.0  22-Feb-81  1250   500.0      30       SALES   CHICAGO
-3    7566   JONES    MANAGER  7839.0   2-Apr-81  2975     NaN      20    RESEARCH    DALLAS
-4    7654  MARTIN   SALESMAN  7698.0  28-Sep-81  1250  1400.0      30       SALES   CHICAGO
-5    7698   BLAKE    MANAGER  7839.0   1-May-81  2850     NaN      30       SALES   CHICAGO
-6    7782   CLARK    MANAGER  7839.0   9-Jun-81  2450     NaN      10  ACCOUNTING  NEW YORK
-7    7788   SCOTT    ANALYST  7566.0   9-Dec-82  3000     NaN      20    RESEARCH    DALLAS
-8    7839    KING  PRESIDENT     NaN  17-Nov-81  5000     NaN      10  ACCOUNTING  NEW YORK
-9    7844  TURNER   SALESMAN  7698.0   8-Sep-81  1500     0.0      30       SALES   CHICAGO
-10   7876   ADAMS      CLERK  7788.0  12-Jan-83  1100     NaN      20    RESEARCH    DALLAS
-11   7900   JAMES      CLERK  7698.0   3-Dec-81   950     NaN      30       SALES   CHICAGO
-12   7902    FORD    ANALYST  7566.0   3-Dec-81  3000     NaN      20    RESEARCH    DALLAS
-13   7934  MILLER      CLERK  7782.0  23-Jan-82  1300     NaN      10  ACCOUNTING  NEW YORK
+              DNAME       LOC  EMPNO   ENAME        JOB     MGR   HIREDATE   SAL    COMM
+DEPTNO
+10      ACCOUNTING  NEW YORK   7782   CLARK    MANAGER  7839.0   9-Jun-81  2450     NaN
+10      ACCOUNTING  NEW YORK   7839    KING  PRESIDENT     NaN  17-Nov-81  5000     NaN
+10      ACCOUNTING  NEW YORK   7934  MILLER      CLERK  7782.0  23-Jan-82  1300     NaN
+20        RESEARCH    DALLAS   7369   SMITH      CLERK  7902.0  17-Dec-80   800     NaN
+20        RESEARCH    DALLAS   7566   JONES    MANAGER  7839.0   2-Apr-81  2975     NaN
+20        RESEARCH    DALLAS   7788   SCOTT    ANALYST  7566.0   9-Dec-82  3000     NaN
+20        RESEARCH    DALLAS   7876   ADAMS      CLERK  7788.0  12-Jan-83  1100     NaN
+20        RESEARCH    DALLAS   7902    FORD    ANALYST  7566.0   3-Dec-81  3000     NaN
+30           SALES   CHICAGO   7499   ALLEN   SALESMAN  7698.0  20-Feb-81  1600   300.0
+30           SALES   CHICAGO   7521    WARD   SALESMAN  7698.0  22-Feb-81  1250   500.0
+30           SALES   CHICAGO   7654  MARTIN   SALESMAN  7698.0  28-Sep-81  1250  1400.0
+30           SALES   CHICAGO   7698   BLAKE    MANAGER  7839.0   1-May-81  2850     NaN
+30           SALES   CHICAGO   7844  TURNER   SALESMAN  7698.0   8-Sep-81  1500     0.0
+30           SALES   CHICAGO   7900   JAMES      CLERK  7698.0   3-Dec-81   950     NaN
 
 """
