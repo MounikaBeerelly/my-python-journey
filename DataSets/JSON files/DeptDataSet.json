@@ -1,0 +1,20 @@
+{
+    "Deptno" : {
+        "0" : 10,
+        "1" : 20,
+        "2" : 30,
+        "3" : 40
+    },
+    "DeptName" : {
+        "0" : "ACCOUNTING",
+        "1" : "RESEARCH",
+        "2" : "SALES",
+        "3" : "OPERATIONS"
+    },
+    "Loc" : {
+        "0" : "MEW YORK",
+        "1" : "DALLAS",
+        "2" : "CHICAGO",
+        "3" : "BOSTON"
+    }
+}
