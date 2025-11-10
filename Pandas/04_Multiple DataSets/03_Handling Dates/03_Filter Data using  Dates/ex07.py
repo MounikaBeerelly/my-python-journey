@@ -11,11 +11,12 @@ print("\n", empDataFrame, end="\n")
 empDataFrame["HIREDATE"] = pd.to_datetime(empDataFrame["HIREDATE"], format = '%d-%b-%y')
 empDataFrame["HIRETIME"] = pd.to_datetime(empDataFrame["HIRETIME"], format = '%H:%M:%S').dt.time
 
-print("\nThe number of employees matching to year 1981 with December month are : ", empDataFrame[empDataFrame['HIREDATE'].dt.year == 1981]["EMPNO"].count(), end="\n")
+print("\nThe sum of investments on salries in the year 1981 : ", empDataFrame[empDataFrame["HIREDATE"].dt.year == 1981]["SAL"].sum(), end="\n")
+print("\nThe avg of investments on salries in the year 1981 : ", empDataFrame[empDataFrame["HIREDATE"].dt.year == 1981]["SAL"].mean(), end="\n")
 
 """
 Output:
-=======
+-------
 
 The data is loaded successfully, redirecting the data to the console...
 
@@ -35,5 +36,8 @@ The data is loaded successfully, redirecting the data to the console...
 12   7902    FORD    ANALYST  7566.0   3-Dec-81  12:05:45  3000     NaN      20
 13   7934  MILLER      CLERK  7782.0  23-Jan-82   9:15:45  1300     NaN      10
 
-The number of employees matching to year 1981 with December month are :  10
+The sum of investments on salries in the year 1981 :  22825
+
+The avg of investments on salries in the year 1981 :  2282.5
+
 """

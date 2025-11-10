@@ -11,12 +11,14 @@ print("\n", empDataFrame, end="\n")
 empDataFrame["HIREDATE"] = pd.to_datetime(empDataFrame["HIREDATE"], format = '%d-%b-%y')
 empDataFrame["HIRETIME"] = pd.to_datetime(empDataFrame["HIRETIME"], format = '%H:%M:%S').dt.time
 
-print("\nThe number of employees matching to year 1981 with December month are : ", empDataFrame[empDataFrame['HIREDATE'].dt.year == 1981]["EMPNO"].count(), end="\n")
+empHireFilter = empDataFrame[empDataFrame["HIREDATE"].dt.year == 1981]
+empHireFilter = empHireFilter[empHireFilter["HIREDATE"].dt.month == 12]
+
+print("\nThe number of employees matching to year 1981 with December month are : ", empHireFilter["EMPNO"].count(), end="\n")
 
 """
 Output:
-=======
-
+-------
 The data is loaded successfully, redirecting the data to the console...
 
      EMPNO   ENAME        JOB     MGR   HIREDATE  HIRETIME   SAL    COMM  DEPTNO
@@ -35,5 +37,6 @@ The data is loaded successfully, redirecting the data to the console...
 12   7902    FORD    ANALYST  7566.0   3-Dec-81  12:05:45  3000     NaN      20
 13   7934  MILLER      CLERK  7782.0  23-Jan-82   9:15:45  1300     NaN      10
 
-The number of employees matching to year 1981 with December month are :  10
+The number of employees matching to year 1981 with December month are :  2
+
 """
