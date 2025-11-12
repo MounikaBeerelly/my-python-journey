@@ -7,7 +7,7 @@ productsDataframe = pd.read_csv("C:\Practice\my-python-journey\DataSets\Products
 
 # print("\n", productsDataframe , end="\n")
 
-"""ARITHMETIC FUNCTIONS"""
+"""AGGREGATION FUNCTIONS"""
 
 print("\nThe total price of the products is: ", end="\n")
 print(productsDataframe["Price"].sum(), end="\n")
