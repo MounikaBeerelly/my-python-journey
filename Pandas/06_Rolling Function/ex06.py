@@ -1,6 +1,7 @@
 import os
 os.system("cls")
 
+import numpy as np
 import pandas as pd
 
 productsDataframe = pd.read_csv("C:\Practice\my-python-journey\DataSets\ProductsData.csv")
@@ -9,9 +10,9 @@ prodDataFrame = productsDataframe[["Name", "Brand", "Price"]]
 
 print("\n", prodDataFrame, end="\n")
 
-rolledData = prodDataFrame["Price"].rolling(window = 3, min_periods = 1).sum()
+rolledData = prodDataFrame["Price"].rolling(window = 3)
 
-print("\n", rolledData, end="\n")
+print("\n", rolledData.aggregate("sum"), end="\n")
 
 """
 Output:
@@ -34,8 +35,8 @@ Output:
 13                     Smart Trimmer Webcam Heater                 Contreras PLC    279
 14                              Webcam Dock Heater     Juarez, Powell and Travis    101
 
- 0      265.0
-1      767.0
+ 0        NaN
+1        NaN
 2      994.0
 3      850.0
 4      349.0

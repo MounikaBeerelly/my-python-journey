@@ -9,7 +9,7 @@ prodDataFrame = productsDataframe[["Name", "Brand", "Price"]]
 
 print("\n", prodDataFrame, end="\n")
 
-rolledData = prodDataFrame["Price"].rolling(window = 3, min_periods = 1).sum()
+rolledData = prodDataFrame["Price"].rolling(window = 3, min_periods = 2).sum()
 
 print("\n", rolledData, end="\n")
 
@@ -34,7 +34,7 @@ Output:
 13                     Smart Trimmer Webcam Heater                 Contreras PLC    279
 14                              Webcam Dock Heater     Juarez, Powell and Travis    101
 
- 0      265.0
+ 0        NaN
 1      767.0
 2      994.0
 3      850.0
@@ -50,5 +50,6 @@ Output:
 13    1189.0
 14    1069.0
 Name: Price, dtype: float64
+
 """
 
