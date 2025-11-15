@@ -3,7 +3,7 @@ os.system("cls")
 
 import pandas as pd
 
-timedeltaObject = pd.Timedelta(4, unit = 'h')
+timedeltaObject = pd.Timedelta(days = 2)
 
 print("\nThe format of the calendar returned is: ", timedeltaObject, end="\n")                               
                 
@@ -12,6 +12,5 @@ print("\nThe format of the calendar returned is: ", timedeltaObject, end="\n")
 Output:
 =======
 
-The format of the calendar returned is:  0 days 04:00:00
-
+The format of the calendar returned is:  2 days 00:00:00
 """
