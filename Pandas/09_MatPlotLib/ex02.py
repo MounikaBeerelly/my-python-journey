@@ -3,15 +3,15 @@ os.system("cls")
 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
-plotDataFrame = pd.DataFrame(np.random.randn(10,5), index = pd.date_range('11/1/2025', periods = 10), columns = list('PQRST'))
+plotXAxisData = pd.DataFrame(np.arange(0,10))
+plotYAxisData = plotXAxisData ** 3
 
-print("\n", plotDataFrame, end="\n")
 
-plotDataFrame.plot()
-
-"""
-Output:
-=======
-
-"""
+plt.title("This is the Chart Title")
+plt.xlabel("Event Time")
+plt.ylabel("Event Temperature")
+plt.plot(plotXAxisData, plotYAxisData, 'r')
+plt.plot(plotXAxisData, plotYAxisData, 'o')
+plt.show()
