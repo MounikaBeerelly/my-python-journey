@@ -16,7 +16,7 @@
     - After installation, run:
         - `jupyter notebook` - This opens Jupyter in your browser.
     
-2. **2: Install via Anaconda (If working with data science)**
+2. **Install via Anaconda (If working with data science)**
     - Download Anaconda:
         - `https://www.anaconda.com/products/distribution`
     - Install it.
