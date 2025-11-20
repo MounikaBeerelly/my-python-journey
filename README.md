@@ -134,5 +134,19 @@
 4. `Formal Parameters` - part of function definition
 
 - When a function is designed, the developer can plan the arguments in two ways
-    1. Mandatory Argumnets
+    1. Mandatory Arguments
     2. Optional OR default arguments
+
+### Note:
+1. When we call any function by just passing the values as actual parameters, the given actual parameter values in actual environment will be copied into the "Formal Parameters" of the function definition exactly as per the declared position of the "Formal Parameters", this kind of parameter substitution by exact position is called as `Positional Notation`.
+- **Basic Illustration :**
+    ```
+    def addValues(inOperand01, inOperand02) :
+                       ^             ^
+                       |             |  Positional notation
+            addValues(operand01, operand02)
+    ```        
+- When positional notation is used in function call, all the supplied "Actual Parameters" should follow the exact order of declaration defined in the "Functions Definition".
+    - Any time the order of the "Actual Parameters" in the "Fucntion call" is mis-matching to the declared order of the "types" of the "Formal Parameters" either
+        - Logically the operational state of the function will be wrong OR
+        - The function at run-time can generate an error due to "Type Mis-Match" 
