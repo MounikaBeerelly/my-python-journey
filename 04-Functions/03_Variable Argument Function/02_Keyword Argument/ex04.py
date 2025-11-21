@@ -23,8 +23,6 @@ sendNotification(Message = "You are found to be late for your shift")
 """
 Output :
 =======
-
-
 This is the main module..
 ---------------------------
 Message Received: Your order has been shipped
