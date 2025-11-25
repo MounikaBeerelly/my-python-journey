@@ -10,3 +10,13 @@
 ```
 
 - Calling a function without the braces - it will return the function address.
+
+### What is `filter()` function in Python?
+1. The `filter()` function accepts a given sequence of values supplied by collection, and Filters(returns) the required element that satisfies the given condition in the "filter()" function argument.
+2. The `filter()` function internally applies and iterator, upon the sequence of the supplied collection, and applies each element returned from implicit iterator to the condition
+
+#### Basic Syntax:
+```
+    filter(Condition, Sequence)
+```
+
