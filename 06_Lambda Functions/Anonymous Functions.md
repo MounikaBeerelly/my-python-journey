@@ -23,3 +23,8 @@
 ### What is map() function in Python ?
 1. The `map()` function executes a specified function for each item of the iterable object.
 
+### What is reduce() function in Python ?
+1. The `reduce(infunctionName, Sequence)` function in Python is basically used to
+    - Apply a particular "function" passed in its `First argument Position`
+    - Specify the sequence type (list) on which the first argument "Function Name" has to be operated.
+    
