@@ -20,4 +20,6 @@
     filter(Condition, Sequence)
 ```
 
+### What is map() function in Python ?
+1. The `map()` function executes a specified function for each item of the iterable object.
 
