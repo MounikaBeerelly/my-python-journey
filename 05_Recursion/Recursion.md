@@ -3,3 +3,7 @@
     - Convert to loops
     - into functions
     - convert to recursion
+
+### What is Head Recursion in Python?
+
+### What is Tail Recursion in Python?
