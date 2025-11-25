@@ -34,4 +34,5 @@ The recorded temperatures that are even number in the year are:  [34, 36, 52, 68
 -----Using Lambda, Filter Function-----
 
 The recorded temperatures that are even number in the year are:  [34, 36, 52, 68]
+
 """
