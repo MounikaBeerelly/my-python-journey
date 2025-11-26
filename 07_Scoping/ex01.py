@@ -4,23 +4,52 @@
 import os # Global scope
 os.system("cls") # "system" function is built-in scope
 
-def raiseValue(inbaseValue) :  # Global scope
-    # Local scope of the current function is begins here
-    finalResult = inbaseValue ** 2
-    print(f"The square of the {inbaseValue} is: {finalResult}", end="\n")
+myGlobalVar = 45 # global variable
+
+def outerFunction() : 
+    # Local scope of the outer function is begins here
+    print("\n---------Outer Function-------------")
+    print(f"\nThe value in the variable \"myGlobalVar\" is : {myGlobalVar} : Used in the global scope influence", end="\n")
+    myOuterVar = 55
+    print(f"\nThe value in the variable \"myOuterVar\" is : {myOuterVar} : Used in the local scope influence", end="\n")
+    
+    def innerFunction() :
+        # Local scope of the inner function is begins here
+        myInnerVar = 65
+        print("\n---------Inner Function-------------")
+        print(f"\nThe value in the variable \"myInnerVar\" is : {myInnerVar} : Used in the local scope influence", end="\n")
+        print(f"\nThe value in the variable \"myOuterVar\" is : {myOuterVar} : Used in the Enclosing scope influence", end="\n")
+        print(f"\nThe value in the variable \"myGlobalVar\" is : {myGlobalVar} : Used in the global scope influence", end="\n")
+        return 
+        # Local scope of the inner function is ends here
+    
+    innerFunction()
     return 
-    # Local scope of the current function is ends here
-
-print("\nMain scope of the application begins from here", end="\n")
-inValue = int(input("\nPlease enter the required value: "))
-raiseValue(inValue)
-
-print("\nThe raised value of  ", inValue, " is :", raiseValue, end="\n" )
+    # Local scope of the outer function is ends here
+print("\n---------Global Scope-------------")
+print(f"\nThe value at the Global Scope level - {myGlobalVar}", end="\n")
+outerFunction()
 
 # The global scope of the Python application ends here
 
 """
 Output:
 ======
+---------Global Scope-------------
 
+The value at the Global Scope level - 45
+
+---------Outer Function-------------
+
+The value in the variable "myGlobalVar" is : 45 : Used in the global scope influence
+
+The value in the variable "myOuterVar" is : 55 : Used in the local scope influence
+
+---------Inner Function-------------
+
+The value in the variable "myInnerVar" is : 65 : Used in the local scope influence
+
+The value in the variable "myOuterVar" is : 55 : Used in the Enclosing scope influence
+
+The value in the variable "myGlobalVar" is : 45 : Used in the global scope influence
 """
