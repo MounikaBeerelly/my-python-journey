@@ -15,7 +15,7 @@ print("\nMain scope of the application begins from here", end="\n")
 inValue = int(input("\nPlease enter the required value: "))
 raiseValue(inValue)
 
-print("\nThe raised value of  ", inValue, " is :",end="\n" )
+print("\nThe raised value of  ", inValue, " is :", raiseValue, end="\n" )
 
 # The global scope of the Python application ends here
 

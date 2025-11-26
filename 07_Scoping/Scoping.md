@@ -13,3 +13,29 @@
 #### Note:
 1. All the operations that are as part of the functions definition are considered to be in local scope of the function.
 2. Local scope is visible only when the function is called.
+
+### Concepts to be remembered when operating with the `Enclosing Scope` :
+1. `Enclosing Scope` arises only when we are having `Nested Functions`.
+2. Inner function accessing the outer function scope is `Enclosing Scope`
+```
+def outerFunction():
+    "The local scope of the outer function begins here"
+
+        1. Global scope of the program level
+        2. Local scope of the outer function level
+        3. Built-in scope of the programming language level
+
+    def innerFunction() :
+        "The local scope of the inner function begins here"
+        
+        1. Local scope of the inner function (first priority)
+        2. Enclosing Scope of the outer functions local scope
+        3. Global scope of the program level
+        4. Built-in scope of the programming language level
+
+        return
+        "The local scope of the inner function ends here"
+
+    return 
+    "The local scope of the outer function ends here"
+```
