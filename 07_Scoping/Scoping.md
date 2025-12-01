@@ -39,3 +39,11 @@ def outerFunction():
     return 
     "The local scope of the outer function ends here"
 ```
+
+### What is meant by Closure ?
+1. A `Closure` is the "Cobination of a function bundled together with all its references to its surrounding spaces".
+2. A `Closure` is a technique for implementing "lexically scoped name binding with respect to any programming language with the concept of `First class functions`".
+3. Closures are possible in Python when
+    1. We have a nested function: Outer function containing the definition of the inner function
+    2. The nested function refers to a variable of the outer function
+    3. The enclosing function "Returns the enclosed function".
