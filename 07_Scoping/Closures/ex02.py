@@ -14,7 +14,7 @@ if __name__ == "__main__" :
     myFunctionObject = getGreetings # We are creating a clone object to the scope of the actual function getGreetings
     print("\nThe value printed by the variable \"myFunctionObject\" is: ", myFunctionObject, end="\n")
     print("\nThe operational data of \"getGreetings\" referenced in-directly using \"myFunctionObject\" is...", end="\n")
-    myFunctionObject()
+    myFunctionObject() # calling function indirectly
 """
 Output:
 -------
