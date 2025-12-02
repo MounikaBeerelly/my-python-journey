@@ -3,73 +3,78 @@
 import os
 os.system("cls")
 
-# Define the List
-stationaryItems = ["Pencils", "Eracers", "Pens", "Papers", "Exam Pads", "Glue Sticks", "Crayons", "Envelops"]
+# Defining the List
+listOfSports = ["Cricket", "football", "Shuttle", "Base Ball"]
 
-# Type of the variable
-print("\nThe calss type is : ", type(stationaryItems))
+print("\nDifferent sports registered in the system are: ", listOfSports, end="\n")
+print("\nDifferent sports registered in the system are: ", list(listOfSports), end="\n")
 
-# Display the data
-print("\nThe Stationary items are: ", stationaryItems, end="\n")
+#Indexing
+print("\n---------------Printing the List with Positive Indexing: Forward Traversal-------------------", end="\n")
+print("\nIn Sports List Index 0 is: ", listOfSports[0], end="\n")
+print("\nIn Sports List Index 1 is: ", listOfSports[1], end="\n")
+print("\nIn Sports List Index 2 is: ", listOfSports[2], end="\n")
+print("\nIn Sports List Index 3 is: ", listOfSports[3], end="\n")
 
-# Show the items using indexes
-print("\nFirst Stationary item is: ", stationaryItems[0], end="\n")
-print("\nSecondary Stationary item is: ", stationaryItems[2], end="\n")
-print("\nLast Stationary item is: ", stationaryItems[-1], end="\n")
+print("\n---------------Printing the List with Negative Indexing: Backward Traversal-------------------", end="\n")
+print("\nIn Sports List Index 3 is: ", listOfSports[-1], end="\n")
+print("\nIn Sports List Index 2 is: ", listOfSports[-2], end="\n")
+print("\nIn Sports List Index 1 is: ", listOfSports[-3], end="\n")
+print("\nIn Sports List Index 0 is: ", listOfSports[-4], end="\n")
 
-# Length of the List
-print("\nLength of the StationaryList is: ", len(stationaryItems), end="\n")
+# Slicing
+listOfValues = [23, 56, 12, 87, 34, 9, 65, 10]
 
-# Slicing the list
-print("\nThe Range of the StationaryList items are: ", str(stationaryItems[2:6]), end="\n")
-print("\nThe Range of the StationaryList items are: ", str(stationaryItems[0:3]), end="\n")
+print("\n---------------Understanding Slicing Concept------------------", end="\n")
+print("\nSlicing for all the values: ", listOfValues[:], end="\n")
 
-# Check the item is in the list
-print("\nThe status for item \"Pencils\" is : ", str("Pencils" in stationaryItems), end="\n")
-print("\nThe status for item \"pencils\" is : ", str("pencils" in stationaryItems), end="\n")
+print("\nPresenting the data from first Index to last element: ", listOfValues[0 :], end="\n")
+print("\nPresenting the data from second Index to last element: ", listOfValues[1 :], end="\n")
+print("\nPresenting the data from first Index to fifth element: ", listOfValues[: 5], end="\n")
+print("\nPresenting the data from third Index to seventh element: ", listOfValues[2 : 7], end="\n")
 
-# Check the item is not in the list
-print("\nThe status for item \"paper\" is : ", str("paper" not in stationaryItems), end="\n")
-
-# Nested List
-employeeInfo = [['John', 'Doe'], ['john@gmail.com', 9876543210], [52, 134.12]]
-print("\nThe name of the employee is :", str(employeeInfo[0]))
-print("\nThe First name of the employee is :", employeeInfo[0][0])
-
-# Deep Nesting
-employeeInfo = [['John', ['Kumar', ['Doe']]], ['john@gmail.com', [9876543210]], [[52], 134.12]]
-print("\nThe lastname of the employee is :", str(employeeInfo[0][1][1]))
+print("\nPresenting the data from forth Index upto 4 elements from the index position: ", listOfValues[4 : 8], end="\n")
 
 
 """
 Output:
 -------
 
-The calss type is :  <class 'list'>
+Different sports registered in the system are:  ['Cricket', 'football', 'Shuttle', 'Base Ball']
 
-The Stationary items are:  ['Pencils', 'Eracers', 'Pens', 'Papers', 'Exam Pads', 'Glue Sticks', 'Crayons', 'Envelops']
+Different sports registered in the system are:  ['Cricket', 'football', 'Shuttle', 'Base Ball']
 
-First Stationary item is:  Pencils
+---------------Printing the List with Positive Indexing: Forward Traversal-------------------
 
-Secondary Stationary item is:  Pens
+In Sports List Index 0 is:  Cricket
 
-Last Stationary item is:  Envelops
+In Sports List Index 1 is:  football
 
-Length of the StationaryList is:  8
+In Sports List Index 2 is:  Shuttle
 
-The Range of the StationaryList items are:  ['Pens', 'Papers', 'Exam Pads', 'Glue Sticks']
+In Sports List Index 3 is:  Base Ball
 
-The Range of the StationaryList items are:  ['Pencils', 'Eracers', 'Pens']
+---------------Printing the List with Negative Indexing: Backward Traversal-------------------
 
-The status for item "Pencils" is :  True
+In Sports List Index 3 is:  Base Ball
 
-The status for item "pencils" is :  False
+In Sports List Index 2 is:  Shuttle
 
-The status for item "paper" is :  True
+In Sports List Index 1 is:  football
 
-The name of the employee is : ['John', 'Doe']
+In Sports List Index 0 is:  Cricket
 
-The First name of the employee is : John
+---------------Understanding Slicing Concept------------------
 
-The lastname of the employee is : ['Doe']
+Slicing for all the values:  [23, 56, 12, 87, 34, 9, 65, 10]
+
+Presenting the data from first Index to last element:  [23, 56, 12, 87, 34, 9, 65, 10]
+
+Presenting the data from second Index to last element:  [56, 12, 87, 34, 9, 65, 10]
+
+Presenting the data from first Index to fifth element:  [23, 56, 12, 87, 34]
+
+Presenting the data from third Index to seventh element:  [12, 87, 34, 9, 65]
+
+Presenting the data from forth Index upto 4 elements from the index position:  [34, 9, 65, 10]
 """
