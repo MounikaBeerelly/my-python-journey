@@ -48,6 +48,15 @@ def outerFunction():
     2. The nested function refers to a variable of the outer function
     3. The enclosing function "Returns the enclosed function".
 
+### What are Partial Functions:
+1. A Partial Function in general is a `Mathematical OR Computational` concept, where a function is defined for some but not all possible inputs of its domain.
+    - **Point to Note** : A Total function is a function that is defined for every input in its domain.
+2. A Partial function can be considered as a function that
+    - Is only defined for a subset of its input space i.e. its domain
+    - May not produce an output for every possible input
+3. As per Computer Science, Partial functions are used when a function can handle only certain inputs OR when the behavior of the function is undefined for certain conditions.
+4. Partial Functions model situations where "certain operations OR computations aren't valid for all possible inputs".
+
 
 ### Higher Order Function:
 - A function which accepts another function as parameter is called `Higher Order Function`.
