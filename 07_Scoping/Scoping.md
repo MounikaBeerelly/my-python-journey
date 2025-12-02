@@ -58,5 +58,23 @@ def outerFunction():
 4. Partial Functions model situations where "certain operations OR computations aren't valid for all possible inputs".
 
 
+### What are Decorators in Python :
+1. A `Decorator` is also a function in Python
+2. A `Decorator` is a special kind of function, that takes **Another function as its argument** and **Returns yet another function**.
+3. A `Decorator` is extremely necessary when we want to **extend the existing function without any modification to the original functions source code**.
+
+#### Basic Syntax :
+```
+    def decoratorFunction() :
+        Operational code
+
+    @decoratorFunction
+    def operationalFunction() :
+        operational code
+
+    operationalFunction()
+```
+
+
 ### Higher Order Function:
 - A function which accepts another function as parameter is called `Higher Order Function`.
