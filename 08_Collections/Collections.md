@@ -14,3 +14,14 @@
     5. Nested List
     7. Any other sequence type
 5. List objects are `Mutable` by nature, hence Python Lists can be altered even after their creation.
+
+#### Example:
+```
+    stationaryItems = ["Pencil", "Eracers", "Pens", "Papers", "Exam Pads"]
+
+    print("\nThe calss type is : ", type(stationaryItems))
+
+    print("\nThe Stationary items are: ", stationaryItems, end="\n")
+    
+    print("\nFirst Stationary item is: ", stationaryItems[0], end="\n")
+```
