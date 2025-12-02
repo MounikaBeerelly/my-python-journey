@@ -45,7 +45,7 @@ def subtractValue(param01, param02) :
     return param01 - param02
 
 if __name__ == "__main__" :
-    print("\n------- Without Decorators ---------------", end="\n")
+    print("\n------- With Decorators ---------------", end="\n")
     print("\nPlease chose the operation.. \n1.Addition\n2.Subtraction")
     inChoice = int(input("\nPlease enter your choice :"))
     
@@ -79,7 +79,7 @@ Now calling the function addValue with arguments 34, 12
 
 The final result is : 46
 
-------- Without Decorators ---------------
+------- With Decorators ---------------
 
 Please chose the operation..
 1.Addition
