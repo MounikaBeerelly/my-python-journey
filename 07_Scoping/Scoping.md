@@ -47,3 +47,7 @@ def outerFunction():
     1. We have a nested function: Outer function containing the definition of the inner function
     2. The nested function refers to a variable of the outer function
     3. The enclosing function "Returns the enclosed function".
+
+
+### Higher Order Function:
+- A function which accepts another function as parameter is called `Higher Order Function`.
