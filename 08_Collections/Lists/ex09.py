@@ -19,7 +19,8 @@ loopCounter = 0
 while loopCounter < len(finalList) :
     print("\nThe element in final list index", loopCounter, "is: ", finalList[loopCounter], end="\n")
     loopCounter += 1
-    
+
+#Counting
 readElement = input("\nPlease give the element to count: ")
 print("\nThe element given for counting is: ", readElement, end="\n")
 print("\nThe element is found : ", finalList.count(readElement), "Time(s)", end = "\n")
