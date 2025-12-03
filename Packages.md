@@ -9,6 +9,7 @@
 3. To show the data in tabular format, need `tabulate` package.
     - `pip install tabulate`
     - `from tabulate import tabulate`
+    - table formats are `grid/mysql/plain`
 
 4. We can't use reduce function directly
     - First import `functools`

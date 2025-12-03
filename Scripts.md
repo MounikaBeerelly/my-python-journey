@@ -2,3 +2,4 @@
 `f ` - String Interpolation
 `%s` -
 `%d` - 
+`.T` -
