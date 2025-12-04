@@ -33,3 +33,16 @@
         - In Shallow copy one object changes another reference object also changes
     2. **Deep Copy** :
         - 
+
+### What are Python Tuple :
+- Similar to Lists
+- Tuples are immutable - once created, we cannot altered.
+- print the tuple using tuple constructor
+    ```
+        nums = (1, 2, 3, 4)
+        print("\nDisplay the elements from the tuple are : ", tuple(nums), end="\n)
+    ```
+- If you want to do any modifications 
+    - change tuple into list
+    - do the operations
+    - change list to tuple
