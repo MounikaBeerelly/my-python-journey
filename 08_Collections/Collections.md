@@ -25,3 +25,10 @@
     
     print("\nFirst Stationary item is: ", stationaryItems[0], end="\n")
 ```
+
+### What are the different types of copy methods by System Design :
+1. As per the System Design standards, we have two types of copy methods
+    1. **Shallow Copy** :
+        - Shallow copy is a process where `A new object of collection directly references the properties and behaviors of the existing collection object`.
+    2. **Deep Copy** :
+        - 
