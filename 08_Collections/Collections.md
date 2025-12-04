@@ -19,7 +19,7 @@
 ```
     stationaryItems = ["Pencil", "Eracers", "Pens", "Papers", "Exam Pads"]
 
-    print("\nThe calss type is : ", type(stationaryItems))
+    print("\nThe class type is : ", type(stationaryItems))
 
     print("\nThe Stationary items are: ", stationaryItems, end="\n")
     
@@ -56,11 +56,21 @@
 4. Python `Set` collection is a `Non-indexed data cllection object`.
 5. Denoted by `{}`
 6. Print the data using `set constructor`.
+- **Example**:
+    ```
+        stationaryItems = {"Pencil", "Eracers", "Pens", "Papers", "Exam Pads"}
+
+        print("\nThe class type is : ", type(stationaryItems))
+
+        print("\nThe Stationary items are: ", set(stationaryItems), end="\n")
+        
+    ```
 
 ### Understanding `Dictionaries` in Python:
 1. `Dictionary` in Python is a collection type, which amnages "Un-Ordered collection of data values".
 2. `Dictionary` is used to store the data values in the format of `<Key : Value>` pairs.
-#### Basic Syntax:
+- **Basic Syntax:**
+
     ```
     dictionaryObject = {
         <key1> : <value1>,
@@ -70,7 +80,8 @@
         <keyN> : <valueN>,
     }
     ```
-- Basic Illustration
+- **Basic Illustration**
+
     ```
     employeeDictionary = {
         "firstName" : "John",
