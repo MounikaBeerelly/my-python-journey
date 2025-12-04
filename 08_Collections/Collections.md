@@ -46,3 +46,11 @@
     - change tuple into list
     - do the operations
     - change list to tuple
+
+### Understanding `Sets` collection in Python:
+1. A `Set` is Python collection with an "Un-ordered" collection of items.
+2. Every element in the `Set` should be definitely
+    - Unique
+    - Immutable
+3. The elements int eh `Set` collection are never associated with any index
+4. Python `Set` collection is a `Non-indexed data cllection object`.
