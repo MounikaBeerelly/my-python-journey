@@ -54,3 +54,28 @@
     - Immutable
 3. The elements int eh `Set` collection are never associated with any index
 4. Python `Set` collection is a `Non-indexed data cllection object`.
+5. Denoted by `{}`
+6. Print the data using `set constructor`.
+
+### Understanding `Dictionaries` in Python:
+1. `Dictionary` in Python is a collection type, which amnages "Un-Ordered collection of data values".
+2. `Dictionary` is used to store the data values in the format of `<Key : Value>` pairs.
+#### Basic Syntax:
+    ```
+    dictionaryObject = {
+        <key1> : <value1>,
+        <key2> : <value2>,
+        <key3> : <value3>,
+        .............
+        <keyN> : <valueN>,
+    }
+    ```
+- Basic Illustration
+    ```
+    employeeDictionary = {
+        "firstName" : "John",
+        "lastName" : "Roy",
+        "age" : 32,
+        "job" : "IT"
+    }
+    ```
