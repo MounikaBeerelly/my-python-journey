@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Practice\my-python-journey\09_Exceptions\Traceback\ex04.py", line 8, in executeDivision
+    quotientValue = inNumerator / inDenominator
+ZeroDivisionError: division by zero
