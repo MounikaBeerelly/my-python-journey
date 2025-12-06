@@ -10,3 +10,9 @@
         ```
         raise NameError("Required Message")
         ```
+### Understanding the `traceback` module in Python :
+1. The `Traceback` module in Python is a "Built-in" module.
+2. The `traceback` module provides functions for handling "Stack Traces" of the Python programs for
+    1. Extarcting
+    2. Formatting
+    3. Printing
