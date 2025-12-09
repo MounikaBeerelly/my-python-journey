@@ -25,3 +25,17 @@
     ```
     fileHandle.close()
     ```
+
+### Example for Writing Data :
+   ```
+   myFileHandle = open("C://Practice//my-python-journey//10_File Operations//OutData/ex01.dat", mode = "w", encoding = "cp1252")
+   ```
+   - `open` - Function to open the required file
+   - `path` 
+        - The total file name should be provided with full path
+        - The path seperator should be "Two forward slashes"
+        - File name can be with any extension
+        - The file name including path should be in double/single quotes
+   - `mode` - The mode in which the file will be operated, and throughout the program the file will be operate only in the specified mode. So this mmode we have permissions in the Operating system
+   - `encoding` - This defines the code page in which the data willbe written OR read
+   - `myFileHandle` - This variable is called as "File Pointer OR Reference to a file", where the file reference is retirned by the ope() function
