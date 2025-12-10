@@ -1,2 +1,1 @@
 This is sample Information for testing file writing operation, using write() method in Python 
-This is sample Information for testing file writing operation, using write() method in Python 
