@@ -3,3 +3,4 @@
 `%s` -
 `%d` - 
 `.T` -
+`strip()` - Removes additional trailing spaces on right side
