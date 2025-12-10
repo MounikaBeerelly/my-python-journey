@@ -39,3 +39,8 @@
    - `mode` - The mode in which the file will be operated, and throughout the program the file will be operate only in the specified mode. So this mmode we have permissions in the Operating system
    - `encoding` - This defines the code page in which the data willbe written OR read
    - `myFileHandle` - This variable is called as "File Pointer OR Reference to a file", where the file reference is retirned by the ope() function
+   - `mode = 'w'` 
+      - Creates the new file with given name, if the file is not existing. 
+      - If the file is existing then opens the file and keeping the file pointer at the beginning of the file.
+      - Existing data will be override
+      
