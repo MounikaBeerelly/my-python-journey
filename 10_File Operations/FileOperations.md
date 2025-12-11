@@ -73,3 +73,15 @@
                 - It rrepresents the end of the file
                 - In this case, the file pointer can move only in backward direction
         ```
+
+### Handling PDF files using Python :
+1. Python provides various different libraries for handling PDF files.
+2. All PDF libraries will allow the Python programmer to progrmmatically
+    1. Read the PDF files
+    2. Manipulate the PDF files
+    3. Create the PDF files
+3. Python is supported with different libraries for handling PDF files
+    1. PyPDF2
+    2. ReportLab
+    3. PDFMiner.six
+    4. PikePDF
