@@ -44,3 +44,32 @@
       - If the file is existing then opens the file and keeping the file pointer at the beginning of the file.
       - Existing data will be override
 
+### Understanding `with open()~ function in Python :
+1. `with open()` function is used as an alternate for opening the files in Python.
+2. `with open()` is built-in functionality, with several advantages specially in terms of Readability, and ensures that the resources are properly managed.
+3. `with open()` simplifies the "File handling" mechanism by "Managing the opening and closing of the files automatically".
+
+### Working with Random files concept in Python :
+1. Random files will allow reading and writing of the data at Random locations "Allowing the end user to access different parts of the file without reading it sequentially".
+2. tell() function OR Method
+    1. The `tell()` function returns the "Current position of the file pointer", that is fixed by the "seek()" function.
+    2. The `tell()` function returns the value of the file pointer in Bytes "from the beginning of the file".
+3. seek() Method OR Function
+    1. To move the file pointer to the desired location, we use `seek()` function.
+    2. The seek() function will take
+        1. The required offset as one of the parameter to move the file pointer by number of bytes.
+        2. The position from where the file pointer should be moved.
+    - **Basic Syntax :** 
+
+        ```
+            seek(offsetInBytes, whence = 0)
+
+            => whence = 0 : 
+                - Which is default, and is beginning of the file
+            => whence = 1 : 
+                - It represents the "current position"
+                - In this case, the file pointer can move in both forward direction as well as backward direction.
+            => whence = 2 : 
+                - It rrepresents the end of the file
+                - In this case, the file pointer can move only in backward direction
+        ```
