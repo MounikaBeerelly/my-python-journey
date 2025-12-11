@@ -7,10 +7,17 @@ with open("C://Practice//my-python-journey//10_File Operations//06_Random Files/
     filePosition = myData.tell()
     print("\nJust now opened the file at position : ", filePosition, " Bytes", end="\n")
     
-    outData = myData.read(6)
+    outData = myData.read(5)
+    print("\nThe first 5 Bytes read are : ", outData, end="\n")
     
-    print("\nthe first 6 Bytes read are : ", outData, end="\n")
+    filePosition = myData.tell()
+    print("\nThe File position after reading the data : ", filePosition, " Bytes", end="\n")
     
+    myData.seek(6)
+    
+    outData = myData.read(5)
+    print("\nThe first 5 Bytes read are : ", outData, end="\n")
+
     filePosition = myData.tell()
     print("\nThe File position after reading the data : ", filePosition, " Bytes", end="\n")
     
@@ -18,11 +25,14 @@ with open("C://Practice//my-python-journey//10_File Operations//06_Random Files/
 """
 Output:
 ------
-
 Just now opened the file at position :  0  Bytes
 
-the first 6 Bytes read are :  Hai! W
+The first 5 Bytes read are :  Hai!
 
-The File position after reading the data :  6  Bytes
+The File position after reading the data :  5  Bytes
+
+The first 5 Bytes read are :  ood M
+
+The File position after reading the data :  11  Bytes
 
 """
