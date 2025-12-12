@@ -6,23 +6,24 @@ from PyPDF2 import PdfReader, PdfMerger, PdfWriter
 
 os.system("cls")
 
-def rotatePDFPages(inPDFFile0, outputDirectory, rotationDegrees) :
+def rotatePDFPages(inPDFFile, outputDirectory, rotationDegrees) :
     try :
         if not os.path.exists(outputDirectory) :
             os.makedirs(outputDirectory)
-            output_path = os.path.join(outputDirectory, f"rotated_{os.path.basename(inPDFFile)}")
-            with open(inPDFFile, "rb") as PdfToRotate :
-                readerObject = PdfReader(PdfToRotate)
-                writerObject = PdfWriter()
+            
+        output_path = os.path.join(outputDirectory, f"rotated_{os.path.basename(inPDFFile)}")
+        with open(inPDFFile, "rb") as PdfToRotate :
+            readerObject = PdfReader(PdfToRotate)
+            writerObject = PdfWriter()
                 
-                for extractedPage in readerObject.pages :
-                    extractedPage.rotate(rotationDegrees)
-                    writerObject.add_page(extractedPage)
+            for extractedPage in readerObject.pages :
+                extractedPage.rotate(rotationDegrees)
+                writerObject.add_page(extractedPage)
                     
-                with open(output_path, "wb") as rotatePdfFile :
-                    writerObject.write(rotatePdfFile)
+        with open(output_path, "wb") as rotatePdfFile :
+            writerObject.write(rotatePdfFile)
                 
-            return f"Rotated PDF is saved to : {output_path}"
+        return f"Rotated PDF is saved to : {output_path}"
     except FileNotFoundError as fileNotFoundObject :
         print(f"Error: The given file {inPDFFile} doesnot exists", end = "\n")
         print(f"Message from Interpretor is : {fileNotFoundObject}", end="\n")
