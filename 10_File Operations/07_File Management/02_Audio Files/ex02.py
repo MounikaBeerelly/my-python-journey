@@ -4,7 +4,7 @@ from playsound import playsound
 import os
 os.system("cls")
 
-print("\nPlaying the audio file which is in the format of \".wav\"")
+print("\nPlaying the audio file which is in the format of \".mp3\"")
 print("---------------------------------------------------------", end="\n")
 
 print("\nLoading the audio file.. Please wait..", end="\n")
