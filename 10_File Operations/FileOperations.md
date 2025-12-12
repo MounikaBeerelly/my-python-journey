@@ -85,3 +85,46 @@
     2. ReportLab
     3. PDFMiner.six
     4. PikePDF
+
+### Handling audio files in Python :
+1. Using `playsound` library, we can play mp3 and wav files.
+2. `playsound` doesnot allow you to manipulate the files. For that use `PyDub` library.
+
+#### Steps for Installing `PyDub` module:
+1. open command prompt
+2. Type `pip install pydub`
+    - Note : Wait untill the installation is completed, any warnings related to "pip" upgrade ignore
+3. Download FFmpeg software
+    1. Download FFmpeg
+        - Go to the official FFmpeg builds page: `https://www.gyan.dev/ffmpeg/builds/`
+        - Under Release builds, download the `ffmpeg-release-essentials.zip` file.
+    2. Install 7-Zip (if not already installed)
+        - Download: `https://www.7-zip.org/download.html`
+        - Install it.
+4. Extract the software using `7Zip` software
+5. Open the unzipped folder
+6. In the `bin` folder, select all the three files, and copy then using CTRL + C
+7. Go to C: drive and create a folder `ffmpeg`
+8. Paste the three copied files in the above directory.
+
+#### Setting environment Variables:
+1. Type `Environment Variables`, select the "Edit the system environment variables" option.
+    1. Click the `Advanced` tab
+    2. Click `Environment Variables` button
+    3. Select `path` and click `Edit` button
+    4. Click `new` button
+    5. add `C:\ffmpeg` path
+    6. Click `OK` and close the "Environment variables" window
+
+#### Testing the `ffmpeg` configuration:
+- Open the command prompt, and type
+    `C:\ffmpeg`
+
+#### Installing `ffmpeg` in Python :
+1. Open command prompt
+2. Type `pip install ffmpeg`
+
+#### Installing `pyaudio` in Python :
+1. Open command prompt
+2. Type `pip install pyaudio`
+
