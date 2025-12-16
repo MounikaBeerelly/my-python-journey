@@ -40,7 +40,8 @@
 - Called when the reference to the object is about to close.
 - `def __del__(self) :`
 
-### Inheritance :
+### Inheritance : 
+- Passing another class as parameter to the class
 1. Single Inheritance :
     - `Message Passing` : To access the private members of the Base Class from the Derived class, we have to pass the message to the Base Class public methods, from the Derived Class public methods definition.
     - All the public members of the Base Class will become publicmembers of the Derived Class.
