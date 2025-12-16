@@ -33,3 +33,5 @@
         def __init__(self, param01, param02, ...) :
             constructor Body
     ```
+
+- Any variable declared at class level,  behaves as static varible
