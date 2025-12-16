@@ -46,5 +46,5 @@
     - `Message Passing` : To access the private members of the Base Class from the Derived class, we have to pass the message to the Base Class public methods, from the Derived Class public methods definition.
     - All the public members of the Base Class will become publicmembers of the Derived Class.
 2. Multi-level Inheritance
-3. Hierarchical Inheritance : One parent - two childs
+3. Hierarchical Inheritance : One parent - multiple childs
 4. Multiple Inheritance : two parents - one child
