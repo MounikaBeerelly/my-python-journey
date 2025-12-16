@@ -35,3 +35,7 @@
     ```
 
 - Any variable declared at class level,  behaves as static varible
+
+### Destructor in Python :
+- Called when the reference to the object is about to close.
+- `def __del__(self) :`
