@@ -10,11 +10,11 @@
 - Print the structure of the class : `emptyClass.__dict__`
 - Method always works for object of its class.
 ### Access Specifiers :
-1. pubic
+1. pubic 
+    - Public members of a class can be directly called upon the object of the class using `.` operator.
 2. private 
-    - Accessing pubilc attributes directly on the name of the object which is outside the class.
-    - Private members of a class cannot call directly on the object of a class.
-    - Without the methods, we can't call the private members
+    - Private members of a class can be used only within the class, hence cannot be  directly called on the object of the class.
+    - To access the private members of the class we definitely need public method in the class.
 3. protected
     
 ### Constructor in Object Oriented Applications :
@@ -39,3 +39,11 @@
 ### Destructor in Python :
 - Called when the reference to the object is about to close.
 - `def __del__(self) :`
+
+### Inheritance :
+1. Single Inheritance :
+    - `Message Passing` : To access the private members of the Base Class from the Derived class, we have to pass the message to the Base Class public methods, from the Derived Class public methods definition.
+    - All the public members of the Base Class will become publicmembers of the Derived Class.
+2. Multi-level Inheritance
+3. Hierarchical Inheritance : One parent - two childs
+4. Multiple Inheritance : two parents - one child
