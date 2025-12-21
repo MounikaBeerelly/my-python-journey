@@ -15,3 +15,11 @@
 3. Issue OR execute the SQL statements and stored procedures if available
 4. Close the connection once all the required operations on the database are done
 
+
+### Setup Database using Python
+1. Installing the required database in the machine.
+2. Installing OR Configuring the database connector for Python
+
+#### Installing MySQL 5.7.28 on the local machine :
+1. https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-5.7.28.0.msi
+2. Double click the installer to begin the installation.
