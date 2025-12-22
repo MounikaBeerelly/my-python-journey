@@ -15,11 +15,49 @@
 3. Issue OR execute the SQL statements and stored procedures if available
 4. Close the connection once all the required operations on the database are done
 
-
 ### Setup Database using Python
-1. Installing the required database in the machine.
+1. Installing the required database on the machine.
 2. Installing OR Configuring the database connector for Python
 
 #### Installing MySQL 5.7.28 on the local machine :
 1. https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-5.7.28.0.msi
 2. Double click the installer to begin the installation.
+
+### cmd:
+- python -m pip install --upgrade pip setuptools 
+-  pip install -U mysql-connector-python --user
+- import mysql.connector as mysql
+-  myDB = mysql.connect(
+   host = "localhost",
+   user = "root",
+   password = "password"
+    )
+
+### Requirements to design and develop one software application:
+1. Data Storage Architecture
+    1. Primary Memory Based (RAM, variables)
+    2. Auxilary OR Physical Storage
+        1. File Based
+            1. Developer should develop all the routines for
+                1. Creating the structures
+                2. Write all the required CRUD operations
+        2. Database Oriented
+            1. Learn and use SQL effectively
+2. Business Operational Architecture
+    1. Using any Programming Language having Procedural Logic Features
+    2. The Language should have the ability to establish connectivity to database
+        1. ODBC
+        2. JDBC
+        3. DSN with CGI
+        4. Language Specific Database Connectors
+3. Data presentation OR Visualization Architecture
+    1. Form Based (Business Operations OR Transactions Based)
+        1. CLI (Command Line Interface)
+        2. GUI (Graphical User Interface)
+            1. Windows Based (Stand alone GUI's)
+            2. Web Based (Browser Based)
+                1. MAcro Browser
+                2. Micro Browser
+    2. Reports Based (Business Data Presentation)
+        1. Text Based
+        2. Graph Based
