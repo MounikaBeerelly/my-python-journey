@@ -79,3 +79,15 @@
 
 #### Installing MySQL Connector :
 - pip install -U mysql-connector-python --user
+
+#### Check the MySQL installation
+- Open command prompt -> go to python shell and type below commands
+```
+import mysql.connector as mysql
+db = mysql.connect (
+    host = "localhost",
+    user = "root",
+    passwd = "localhost"
+)
+print(db)
+```
