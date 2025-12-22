@@ -61,3 +61,21 @@
     2. Reports Based (Business Data Presentation)
         1. Text Based
         2. Graph Based
+
+### Requirements to design and develop one Software Database application :
+- **STEP 1 - Database Selection**
+    1. Database Installation and Configuration (DBA)
+- **STEP 2 - Middle Layer Software Selection**
+    1. Operational Software Installation and Configuration with specific database connector
+
+#### Ensuring PIP in the Machine :    
+- python -m ensurepip
+
+#### Installing PIP on the machine :
+- python -m pip install -U
+
+#### Upgrading PIP package :
+- python -m pip install -- upgrade pip setuptools
+
+#### Installing MySQL Connector :
+- pip install -U mysql-connector-python --user
