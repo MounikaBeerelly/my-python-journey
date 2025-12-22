@@ -19,20 +19,6 @@
 1. Installing the required database on the machine.
 2. Installing OR Configuring the database connector for Python
 
-#### Installing MySQL 5.7.28 on the local machine :
-1. https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-5.7.28.0.msi
-2. Double click the installer to begin the installation.
-
-### cmd:
-- python -m pip install --upgrade pip setuptools 
--  pip install -U mysql-connector-python --user
-- import mysql.connector as mysql
--  myDB = mysql.connect(
-   host = "localhost",
-   user = "root",
-   password = "password"
-    )
-
 ### Requirements to design and develop one software application:
 1. Data Storage Architecture
     1. Primary Memory Based (RAM, variables)
@@ -65,6 +51,7 @@
 ### Requirements to design and develop one Software Database application :
 - **STEP 1 - Database Selection**
     1. Database Installation and Configuration (DBA)
+        - https://downloads.mysql.com/archives/installer/
 - **STEP 2 - Middle Layer Software Selection**
     1. Operational Software Installation and Configuration with specific database connector
 
