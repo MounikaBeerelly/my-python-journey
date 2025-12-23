@@ -78,3 +78,7 @@ db = mysql.connect (
 )
 print(db)
 ```
+- We use db.cursor() because a database connection alone cannot execute SQL queries. The cursor is the object that actually executes SQL statements, fetches results, and manages query state.
+```
+    myCursor = db.cursor()
+```
