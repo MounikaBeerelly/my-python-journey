@@ -13,3 +13,5 @@
 5. Create Table - `myCursor.execute("CREATE TABLE myDept(DeptID integer, DeptName VARCHAR(30), DeptLoc VARCHAR(30))")`
 6. Show tables - `myCursor.execute("SHOW TABLES")`
 7. Fetch all the data - `myCursor.fetchall()`
+8. Insert single record -
+9. Insert multiple records -
