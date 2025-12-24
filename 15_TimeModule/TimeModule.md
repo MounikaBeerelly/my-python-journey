@@ -32,7 +32,7 @@ time.gmtime(0) # time.struct_time(tm_year=1970, tm_mon=1, tm_mday=1, tm_hour=0, 
 - `time.process_time()` - This retunrs the sum of the system and the User CPU time of the current process, this function ignores the time elapsed during the sleep. 
 - `time.perf_counter()` - This function uses a clock with the highest precision to measure the short duration and factors in the process sleep time.
 
-### What are th ecomponents of the `time` tuple ?
+### What are the components of the `time` tuple ?
 0. 4-digit year
 1. Month (1 to 12)
 2. Month Day(1 to 31)
