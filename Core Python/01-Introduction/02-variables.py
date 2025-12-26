@@ -134,3 +134,10 @@ floatValue = 35.45
 bigFloatValue = 2345678976543234567.3456789765432
 complexValue = 6.35j
 print("\nthe given character id: ", charValue,"the datatype identified is:",type(charValue), end="\n")
+
+
+amount = 50
+itemCost = 15
+tax = 3
+remainingAmount = amount - itemCost - (itemCost * tax / 100)
+print(remainingAmount)
