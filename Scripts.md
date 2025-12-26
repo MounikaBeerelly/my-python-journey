@@ -1,9 +1,14 @@
-`__name__` - 
-`f ` - String Interpolation
-`%s` -
-`%d` - 
-`.T` -
-`strip()` - Removes additional trailing spaces on right side
+- `__name__` - 
+   - `__name__` is a special built-in variable in Python that tells you how a Python file is being used.
+   - Every Python module has a variable called `__name__`
+   - Its value depends on how the module is executed.
+   - Run this code only if this file is the starting point of the program.
+- `f` - String Interpolation
+- `r` - 
+- `%s` -
+- `%d` - 
+- `.T` -
+- `strip()` - Removes additional trailing spaces on right side
 
 ### DataBase Queries :
 1. Import package - `import mysql.connector as mysql`
