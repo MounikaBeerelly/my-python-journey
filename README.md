@@ -82,7 +82,7 @@
     - **Syntax**
         -   ```
                 for<indexing> in <range>:
-                statements
+                    statements
             ```
             - By default if not mentioned range, range intializes from 0, and continues to the nth value
 
