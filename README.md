@@ -80,10 +80,10 @@
     - Every "for" loop has at-least one indexing variable, which is auto declared and n=managed as the loop is advancing.
     - "for" loop contains "in" keyword which actually identifies the object on which the iteration has to be implemented.
     - **Syntax**
-        - ```
-        for<indexing> in <range>:
-            statements
-        ```
+        -   ```
+                for<indexing> in <range>:
+                statements
+            ```
             - By default if not mentioned range, range intializes from 0, and continues to the nth value
 
 ### Understanding "zip()" function in for loop:
